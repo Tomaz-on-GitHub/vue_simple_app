@@ -2,7 +2,7 @@
 <template>
   <header>
     <h1>{{title}}</h1>
-    <Button />
+    <Button text="Add task" color="green"/>
   </header>
 </template>
 
