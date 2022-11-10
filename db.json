@@ -19,16 +19,10 @@
       "reminder": true
     },
     {
-      "text": "Go to dentist Zobven",
-      "day": "a nice day to test db functionality",
+      "text": "test final",
+      "day": "testing on the final day at 21:00",
       "reminder": false,
       "id": 27580
-    },
-    {
-      "text": "Test db1",
-      "day": "day 3",
-      "reminder": true,
-      "id": 27581
     }
   ]
 }
