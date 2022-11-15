@@ -3,7 +3,10 @@
     <Header @toggle-add-task='toggleAddTask' 
     title="Task tracker" 
     :showAddTask="showAddTask" />
-    <router-view :showAddTask="showAddTask">
+    <router-view @show-form-for-edit='toggleFormForEdit' 
+                  :showAddTask="showAddTask"
+                  :showEditTask="showEditTask"
+                  >
     </router-view>
     <Footer />
   </div> 
@@ -25,6 +28,7 @@ export default {
    data() {
     return {
       showAddTask: false,
+      showEditTask: false,
     }
    },
    
@@ -34,6 +38,10 @@ export default {
       //console.log('click now emitted to app');
       this.showAddTask = !this.showAddTask
     },
+    toggleFormForEdit() {
+      console.log('now we can toogle the view of edit');
+        this.showEditTask = !this.showEditTask;
+    }
    
   }
   

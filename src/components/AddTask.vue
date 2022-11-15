@@ -40,22 +40,18 @@ export default {
         return
       }
       const newTask = {
-        //id: Math.floor(Math.random() * 100000),
+        // id: Math.floor(Math.random() * 100000),
         text: this.text,
         day: this.day,
         reminder: this.reminder,
       }
-      //console.log(newTask)
       this.$emit('add-task', newTask)
-      //clean the form
       this.text = ''
       this.day = ''
       this.reminder = false
     },
   },
-  
-  }
-
+}
 </script>
 
 <style scoped>
@@ -88,4 +84,3 @@ export default {
   height: 20px;
 }
 </style>
-

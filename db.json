@@ -1,28 +1,22 @@
 {
   "tasks": [
     {
-      "id": "1",
+      "id": 1,
       "text": "Doctors Appointment",
-      "day": "March 5th at 2:30pm",
+      "day": "March 5th at 2:31pm",
       "reminder": true
     },
     {
-      "id": "2",
+      "id": 2,
       "text": "Meeting with boss nice",
-      "day": "March 6th at 1:30pm",
-      "reminder": true
+      "day": "March 6th at 1:31pm",
+      "reminder": false
     },
     {
-      "id": 27579,
-      "text": "Go to dentist Kristof",
-      "day": "November 10th at 3:30pm",
+      "id": 27581,
+      "text": "test_to_DB23456",
+      "day": "a nice day to test db functionality234567",
       "reminder": true
-    },
-    {
-      "text": "test final",
-      "day": "testing on the final day at 21:00",
-      "reminder": false,
-      "id": 27580
     }
   ]
 }

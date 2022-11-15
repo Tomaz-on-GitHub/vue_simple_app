@@ -4,6 +4,8 @@
      
     <h3>
       {{ task.text }}
+
+      <i @click="editTask(task.id)" class="fa fa-pen fa-1g"></i>
       <i @click="onDelete(task.id)" class="fas fa-times"></i>
     </h3>
     <p>{{ task.day }}</p>
@@ -24,12 +26,21 @@ export default {
     onDelete(id) {
         //console.log('delete' + id);
         this.$emit('delete-task',id)
+    },
+    editTask(id) {
+      //console.log('edit' + id);
+      this.$emit('edit-task',id)
     }
    }
 }
 </script>
 
 <style scope>
+.fa {
+  margin-left: auto;
+  padding-right:5px;
+}
+
 .fas {
   color: red;
 }
@@ -45,6 +56,6 @@ export default {
 .task h3 {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: left;
 }
 </style>
